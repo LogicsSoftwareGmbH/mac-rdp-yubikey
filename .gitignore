@@ -1,0 +1,5 @@
+# local host settings, remembered username and session log
+config.local
+.last-user
+*.log
+.DS_Store

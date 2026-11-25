@@ -1,0 +1,16 @@
+# Copy to config.local and adjust. config.local is gitignored.
+
+# RDP host: IP or hostname (optionally :port)
+HOST=192.168.1.10
+
+# SHA-256 fingerprint of the host's RDP certificate (colon-separated hex).
+# Leave empty: on the first connect the launcher shows the certificate and
+# asks whether to trust it, then saves the fingerprint here.
+CERT_FP=
+
+# Name in the certificate (the PC's computer name, e.g. MY-PC). Needed when
+# HOST is an IP address. Filled in automatically together with CERT_FP.
+CERT_NAME=
+
+# Extra FreeRDP arguments, one array element per argument.
+EXTRA_ARGS=(+clipboard /dynamic-resolution /size:90%)
